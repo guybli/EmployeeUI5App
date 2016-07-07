@@ -1,0 +1,75 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core" xmlns:form="sap.ui.layout.form">
+	<Page id="detail1">
+	<content>
+		 <ObjectHeader title="{employee>/FNAME} {employee&gt;/LNAME}" intro="{employee>/TITLE}" introActive="true" titleActive="true" iconActive="false" id="__header2" number="{employee>/ID}" icon="{employee>/IMG_URL}"  >
+		 	<attributes>
+		 		<ObjectAttribute text="edit" active ="true" press="onEdit" />
+		 	</attributes>
+		 	</ObjectHeader>
+	    <IconTabBar id="__bar0">
+	        <items>
+	            <IconTabFilter text="Details" icon="sap-icon://account" id="__filter0" key="detail">
+	                <content>
+	                	<!--<Image id="empImg" width="15%" height="15%" src="{employee>/IMG_URL}" alt="no image found" class="sapUiResponsiveMargin" decorative="false"/>-->
+	                  	<form:SimpleForm id="objectForm">
+						<form:content>
+							<Label text="ID"/>
+							<Text text="{employee>/ID}"/>
+								<Label text="Title"/>
+							<Text text="{employee>/TITLE}"/>
+							<Label text="First Name"/>
+							<Text text="{employee>/FNAME}"/>
+							<Label text="Last Name"/>
+							<Text text="{employee>/LNAME}"/>
+							<Label text="Sex"/>
+							<Text text="{employee>/SEX}"/>	
+							<Label text="Country"/>
+							<Text text="{employee>/COUNTRY}"/>
+							<Label text="Telephone"/>
+							<Text text="{employee>/PHONE}"/>
+							<Label text="E-Mail"/>
+							<Text text="{employee>/EMAIL}"/>	
+						</form:content>
+					</form:SimpleForm>
+	                </content>
+	            </IconTabFilter>
+	            <IconTabFilter text="Manager" icon="sap-icon://manager" id="__filter1" iconDensityAware="false" key="manager">
+	            	 <content>
+	            	 	<Image id="manImg" width="35%" height="35%" src="{manager>/IMG_URL}" alt="no image found"/>
+	                  	<form:SimpleForm id="managerForm">
+						<form:content>
+							<Label text="ID"/>
+							<Text text="{manager>/ID}"/>
+								<Label text="Title"/>
+							<Text text="{manager>/TITLE}"/>
+							<Label text="First Name"/>
+							<Text text="{manager>/FNAME}"/>
+							<Label text="Last Name"/>
+							<Text text="{manager>/LNAME}"/>
+							<Label text="Sex"/>
+							<Text text="{manager>/SEX}"/>	
+							<Label text="Country"/>
+							<Text text="{manager>/COUNTRY}"/>
+							<Label text="Telephone"/>
+							<Text text="{manager>/PHONE}"/>
+							<Label text="E-Mail"/>
+							<Text text="{manager>/EMAIL}"/>	
+						</form:content>
+					</form:SimpleForm>
+	                </content>
+	            	</IconTabFilter>
+	            <IconTabFilter text="Reports" icon="sap-icon://group" id="__filter2" key="reports">
+	                <content>
+	                    <List id="repList" noDataText="No Direct Reports" items="{path: 'reports>/REPORTS/' , sorter: { path:'ID'} }" includeItemInSelection="true">
+	                        
+	                           <StandardListItem title="{REPORT/FNAME} {path: 'LNAME'}" description="{path : 'TITLE'}" info="test" icon="{/MG_URL}"/>
+	                           	
+	                    </List>
+	                </content>
+	            </IconTabFilter></items>
+	    </IconTabBar>
+		
+	   
+	</content>
+	</Page>
+</core:FragmentDefinition>

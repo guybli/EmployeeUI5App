@@ -1,0 +1,27 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core">
+	<Page id="manager"> 
+	<content>
+			<List id="allEmployeeList" items="{/EMPLOYEES}" mode="SingleSelectLeft" selectionChange="onSave">
+		
+					<ObjectListItem id="listItem" title="{FNAME} {LNAME}" intro="{TITLE}" number="{ID}" icon="{IMG_URL}" />
+		
+		
+			</List>
+	</content>
+	<headerContent>
+	     <Toolbar width="100%" id="changeManagerToolbar" visible="true">
+		
+			        <content>
+		
+			            <!--<Button text="Save" width="100px" id="Save" icon="sap-icon://accept" press="onSave" type="Accept"/>-->
+		
+			            <ToolbarSpacer id="__spacer0"/>
+		
+			            <Button  width="100px" id="cancel" icon="sap-icon://sys-cancel" press="onCancel" type="Reject"/>
+		
+			        </content>
+		
+			    </Toolbar>
+	</headerContent>
+	</Page>
+</core:FragmentDefinition>

@@ -1,0 +1,100 @@
+{
+  "EMPLOYEES":[{
+    "ID":"0001",
+  "FNAME"  :"GUY",
+  "LNAME":"BARROS",
+  "SEX":"M",
+  "TITLE":"Super Master Blaster",
+  "COUNTRY":"GB",
+  "PHONE":"+44 0 8675309",
+  "EMAIL":"guy.barros@aw.co.uk",
+   "IMG_URL":"http://i.imgur.com/UaaVZBa.png",
+  "MANAGER":{
+        "ID":"0002"
+     },
+    "REPORTS":[
+      {"ID":"0003"},
+      {"ID":"0004"},
+      {"ID":"0005"}
+      ]
+  },
+  
+  {
+    "ID":"0002",
+  "FNAME"  :"BIG",
+  "LNAME":"BOSS",
+  "SEX":"F",
+  "TITLE":"Super Duper Master Blaster",
+  "COUNTRY":"GB",
+  "PHONE":"+44 0 8675309",
+  "EMAIL":"big.boss@aw.co.uk",
+   "IMG_URL":"http://i.imgur.com/ww6hMn6.jpg",
+  "MANAGER":{
+        
+     },
+    "REPORTS":[
+      {"ID":"0001"},
+      {"ID":"0004"},
+      {"ID":"0005"}
+      ]
+  },
+  
+  {
+    "ID":"0003",
+  "FNAME"  :"Little",
+  "LNAME":"Bugger",
+  "SEX":"M",
+  "TITLE":"Little Blaster",
+  "COUNTRY":"GB",
+  "PHONE":"+44 0 8675309",
+  "EMAIL":"little.bugger@aw.co.uk",
+  "IMG_URL":"http://i.imgur.com/syJZZft.jpg",
+  "MANAGER":{
+        "ID":"0001"
+     },
+    "REPORTS":[
+     
+      ]
+  },
+  
+  
+  {
+    "ID":"0004",
+  "FNAME"  :"Medium",
+  "LNAME":"Bugger",
+  "SEX":"M",
+  "TITLE":"Blaster",
+  "COUNTRY":"GB",
+  "PHONE":"+44 0 8675309",
+  "EMAIL":"medium.bugger@aw.co.uk",
+  "IMG_URL":"http://i.imgur.com/84u9TGV.jpg",
+  "MANAGER":{
+        "ID":"0001"
+     },
+    "REPORTS":[
+     
+      ]
+  },
+  
+  {
+    "ID":"0005",
+  "FNAME"  :"Medium",
+  "LNAME":"Bugger",
+  "SEX":"M",
+  "TITLE":"Super Duper Master Blaster",
+  "COUNTRY":"GB",
+  "PHONE":"+44 0 8675309",
+  "EMAIL":"big.boss@aw.co.uk",
+  "IMG_URL":"http://i.imgur.com/ZffrQfW.jpg",
+  "MANAGER":{
+        "ID":"0001"
+     },
+    "REPORTS":[
+     
+      ]
+  }
+  
+
+  ]
+  
+}

@@ -1,0 +1,96 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core" xmlns:form="sap.ui.layout.form">
+	<Page id="editEmployee" showNavButton="true" navButtonPress="onBack">
+		
+		<content>
+		
+		    <Panel id="employeeDetail">
+		
+		        <content>
+		
+		            <form:SimpleForm editable="Mixed" layout="ResponsiveGridLayout" id="__form0">
+		
+		                <form:content>
+		
+		                    <core:Title text="Employee Details" id="__title0"/>
+							
+							 <Label text="Title"/>
+		
+		                    <Input width="100%" id="title" value="{employee>/TITLE}"/>	                    	
+		
+		                    <Label text="First Name"/>
+		
+		                    <Input width="100%" id="fname" value="{employee>/FNAME}"/>
+		
+		                    <Label text="Last Name"/>
+		
+		                    <Input width="100%" id="lname" value="{employee>/LNAME}"/>
+		                    	
+		                    <Label text="Sex"/>
+		
+		                    <Input width="100%" id="sex" value="{employee>/SEX}" editable="false"/>
+		                    
+		                    <Label text="Country"/>
+		
+		                    <Input width="100%" id="country" value="{employee>/COUNTRY}"/>
+		                    
+		                    <Label text="Telephone"/>
+		
+		                    <Input width="100%" id="phone" value="{employee>/PHONE}"/>
+		                    
+		                    <Label text="E-Mail"/>
+		
+		                    <Input width="100%" id="email" value="{employee>/EMAIL}"/>
+		                    
+		                    <Label text="Image Url"/>
+		
+		                    <Input width="100%" id="imgurl" value="{employee>/IMG_URL}"/>
+		                    	
+		                    
+		                    	
+		                    </form:content>
+		
+		            </form:SimpleForm>
+		
+		        </content>
+		
+		    </Panel>
+		    
+		    <Panel id="manager" headerText="Manager Details">
+		    <content>
+		        
+	            	 	<Image  width="35%" height="35%" src="{manager>/IMG_URL}" alt="no image found"/>
+	                  	<form:SimpleForm id="manForm">
+						<form:content>
+							<Label text="ID"/>
+							<Text text="{manager>/ID}"/>
+								<Label text="Title"/>
+							<Text text="{manager>/TITLE}"/>
+							<Label text="First Name"/>
+							<Text text="{manager>/FNAME}"/>
+							<Label text="Last Name"/>
+							<Text text="{manager>/LNAME}"/>
+							<Label text="Sex"/>
+							<Text text="{manager>/SEX}"/>	
+							<Label text="Country"/>
+							<Text text="{manager>/COUNTRY}"/>
+							<Label text="Telephone"/>
+							<Text text="{manager>/PHONE}"/>
+							<Label text="E-Mail"/>
+							<Text text="{manager>/EMAIL}"/>	
+						</form:content>
+					</form:SimpleForm>
+	               
+		    </content>
+		    <headerToolbar>
+		        <Toolbar width="100%" id="__toolbar2">
+		            <content>
+		                <Button text="Change Manager" width="100px" id="__button2" press="onChangeManager" icon="sap-icon://edit-outside"/>
+		            </content>
+		        </Toolbar>
+		    </headerToolbar>
+		    </Panel>
+		
+		</content>
+		
+		</Page>
+</core:FragmentDefinition>
