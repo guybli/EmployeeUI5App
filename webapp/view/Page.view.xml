@@ -1,0 +1,23 @@
+<mvc:View xmlns:core="sap.ui.core" 
+xmlns:mvc="sap.ui.core.mvc"
+xmlns="sap.m"
+xmlns:semantic="sap.m.semantic"
+xmlns:form="sap.ui.layout.form"
+xmlns:footerbar="sap.ushell.ui.footerbar"
+xmlns:l="sap.ui.layout"
+controllerName="aw.com.controller.Page"
+xmlns:html="http://www.w3.org/1999/xhtml">
+	<SplitApp id="employeeApp" initialDetail="blank"  initialMaster="master" orientationChange="onOrientationChange">
+		<detailPages>
+		<!--	<mvc:XMLView viewName="aw.com.view.EmployeeDetails" id="detail1" />-->
+			<core:Fragment fragmentName="aw.com.view.blank" type="XML" />
+			<core:Fragment fragmentName="aw.com.view.EmployeeDetail" type="XML" />
+			<core:Fragment fragmentName="aw.com.view.EditEmployee" type="XML" />
+		</detailPages>
+		<masterPages>
+			
+					<core:Fragment fragmentName="aw.com.view.EmployeeMaster" type="XML" />
+			 
+		</masterPages>
+	</SplitApp>
+</mvc:View>

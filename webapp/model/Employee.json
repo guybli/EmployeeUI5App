@@ -1,0 +1,19 @@
+{
+    "ID":"",
+  "FNAME"  :"",
+  "LNAME":"",
+  "SEX":"",
+  "TITLE":"",
+  "COUNTRY":"",
+  "PHONE":"",
+  "EMAIL":"",
+  "IMG_URL":"",
+  "MANAGER":{
+        "ID":""
+     },
+    "REPORTS":[
+      {"ID":""},
+      {"ID":""},
+      {"ID":""}
+      ]
+  }
