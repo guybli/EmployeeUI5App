@@ -58,6 +58,7 @@
 					</form:SimpleForm>
 	                </content>
 	            	</IconTabFilter>
+<<<<<<< HEAD
 	            <IconTabFilter text="Reports" icon="sap-icon://group" id="__filter2" key="reports">
 	                <content>
 	                    <List id="repList" noDataText="No Direct Reports" items="{path: 'reports>/REPORTS/' , sorter: { path:'ID'} }" includeItemInSelection="true">
@@ -65,6 +66,34 @@
 	                           <StandardListItem title="{REPORT/FNAME} {path: 'LNAME'}" description="{path : 'TITLE'}" info="test" icon="{/MG_URL}"/>
 	                           	
 	                    </List>
+=======
+	            <IconTabFilter text="Reports" icon="sap-icon://group" id="iconTab" key="reports">
+	                <content>
+	                    <List id="repList" noDataText="No Direct Reports"   mode="SingleSelectMaster" selectionChange="onShowReportDetail" >
+	                           
+	                           </List>
+	                           
+	                    	<form:SimpleForm id="reportDetailForm">
+						<form:content>
+							<Label text="ID"/>
+							<Text text="{report>/ID}"/>
+								<Label text="Title"/>
+							<Text text="{report>/TITLE}"/>
+							<Label text="First Name"/>
+							<Text text="{report>/FNAME}"/>
+							<Label text="Last Name"/>
+							<Text text="{report>/LNAME}"/>
+							<Label text="Sex"/>
+							<Text text="{report>/SEX}"/>	
+							<Label text="Country"/>
+							<Text text="{report>/COUNTRY}"/>
+							<Label text="Telephone"/>
+							<Text text="{report>/PHONE}"/>
+							<Label text="E-Mail"/>
+							<Text text="{report>/EMAIL}"/>	
+						</form:content>
+					</form:SimpleForm>
+>>>>>>> branch 'master' of https://github.com/guybli/EmployeeUI5App
 	                </content>
 	            </IconTabFilter></items>
 	    </IconTabBar>
